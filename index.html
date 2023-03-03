@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./weather-icon.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weather API</title>
+  </head>
+  <body style="font-family: 'Poppins', sans-serif; box-sizing: border-box">
+    <section
+      class="w-full h-[100vh] bg-slate-500 bg-cover bg-no-repeat bg-bottom"
+      style="background-image: url(./bg.jpg)"
+    >
+
+      <div class="w-[95%] max-w-7xl mx-auto top-logo pt-20">
+        <h1 class="text-5xl font-semibold text-center">weathertoday.com</h1>
+      </div>
+      <div class="w-[95%] max-w-7xl mx-auto">
+        <div class="grid place-content-center">
+          <div>
+            <input
+              type="text"
+              class="bg-black opacity-50 mt-8 px-8 py-5 rounded-lg text-white outline-none lg:w-96"
+              name=""
+              id=""
+              placeholder="enter city name here."
+            />
+
+            <button class="bg-black hover:bg-gray-900 transition-all ease-in text-white px-8 py-5 rounded-lg">
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-[95%] max-w-7xl mx-auto top-logo mt-14">
+        <div class="grid place-content-center">
+          <img src="./weather-icon.png" alt="" />
+        </div>
+      </div>
+      <div class="w-[95%] max-w-7xl mx-auto top-logo">
+        <h1 class="text-[6rem] font-semibold text-center" id="city-name">
+          Dhaka
+        </h1>
+      <div class="w-[95%] max-w-7xl mx-auto top-logo">
+        <p class="text-5xl font-normal text-center"><span id="celcius">28.9</span>&deg; <span id="weather">Cloudy</span></p>
+      </div>
+    </section>
+  </body>
+</html>
